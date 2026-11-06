@@ -59,8 +59,8 @@ Receta recetaDesdeJson(Map<String, dynamic> json) {
 PaginaRecetas paginaDesdeJson(Map<String, dynamic> json) {
   switch (json) {
     case {
-        'recipes': List lista, 
-        'total': int total
+      'recipes': List lista, 
+      'total': int total
       }:
       final recetas = <Receta>[];
       for (final elemento in lista) {
